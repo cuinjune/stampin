@@ -8,9 +8,10 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="utf-8" http-equiv="encoding" />
     <link rel='icon' href='assets/favicon/favicon.ico' type='image/x-icon' />
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core@1.7.2/dist/tf-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter@1.7.2/dist/tf-converter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh@0.0.1/dist/facemesh.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.110.0/build/three.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.110.0/examples/js/loaders/OBJLoader.js"></script>
@@ -60,8 +61,8 @@
             margin: 20px 0;
         }
 
-        p{
-            font-size:large;
+        p {
+            font-size: large;
             line-height: 1.2em;
         }
 
@@ -121,7 +122,6 @@
         h2 {
             margin-bottom: 20px;
         }
-     
     </style>
 </head>
 
@@ -139,15 +139,15 @@
     </div>
 
     <div class="container" id="audioContainer">
-      
-            <H2 id="guide">Let's begin here.</H2>
-            <audio id="audioPlayer" controls>
-                <source src="assets/audio/stamping_new_compressed.mp3" type="audio/mp3">
-                <div style="border: 1px solid gray ; padding: 8px ;">
-                    Sorry, your browser does not support the <audio> tag used in this demo.
-                </div>
-            </audio>
-        
+
+        <H2 id="guide">Let's begin here.</H2>
+        <audio id="audioPlayer" controls>
+            <source src="assets/audio/stamping_new_compressed.mp3" type="audio/mp3">
+            <div style="border: 1px solid gray ; padding: 8px ;">
+                Sorry, your browser does not support the <audio> tag used in this demo.
+            </div>
+        </audio>
+
     </div>
 
     <!-- window video -->
@@ -174,13 +174,13 @@
     </div>
 
     <div id="endingScene" class="container" style="display:none">
-     <p>Thank you for joining us. </p>
+        <p>Thank you for joining us. </p>
         </p>
 
         <br>
         <p> We invite you to create the images you saw in your journey, perhaps in a letter, or a drawing, or a
             sculpture, or a photograph (whatever a photograph means to you). </p>
-            <p> We also invite you to share this on
+        <p> We also invite you to share this on
             Instagram with #StampinInTheGraveyard. Together, we will create a collage of images, all windows into the
             last theatre on earth.
         </p>
